@@ -220,20 +220,6 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
-    },
-    {
-      "name": "belal",
-      "username": "belal",
-      "email": "nealla@mail.com",
-      "address": {
-        "city": "tanta"
-      },
-      "phone": "01272008335",
-      "website": "wwww",
-      "company": {
-        "name": "ffff"
-      },
-      "id": 11
     }
   ],
   "todos": [
@@ -1436,12 +1422,6 @@
       "id": 200,
       "title": "ipsam aperiam voluptates qui",
       "completed": false
-    },
-    {
-      "userId": "11",
-      "title": "Learn DSA",
-      "completed": true,
-      "id": 201
     }
   ]
 }

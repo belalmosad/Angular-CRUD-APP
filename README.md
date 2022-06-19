@@ -4,7 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## To Run json-server for data
 
-```shell
+### go to **DB folder** `cd DB` and run the command
+
+```
 json-server --watch db.json
 
 ```
