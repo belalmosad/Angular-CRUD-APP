@@ -1,0 +1,88 @@
+<div class="container">
+    <form class="my-5" [formGroup] = "newUserFormGroup" (ngSubmit)="updateUser()">
+
+        <h1 class="text-center">Update User</h1>
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" formControlName = 'name'>
+          <div *ngIf="!newUserFormGroup.controls['name'].valid; else validName">
+            <p class="text-danger">Enter Valid Name</p>
+          </div>
+          <ng-template  #validName >
+            <p class="text-success" >Valid Name</p>
+          </ng-template>
+        </div>
+
+        <div class="mb-3">
+            <label for="username" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="username" formControlName = 'username'>
+            <div *ngIf="!newUserFormGroup.controls['username'].valid; else validUserName">
+                <p class="text-danger">Enter Valid username</p>
+            </div>
+            <ng-template  #validUserName >
+                <p class="text-success" >Valid useranme</p>
+            </ng-template>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName='email'>
+            <div *ngIf="!newUserFormGroup.controls['email'].valid; else validEmail">
+                <p class="text-danger">Enter Valid email</p>
+            </div>
+            <ng-template  #validEmail >
+                <p class="text-success" >Valid email</p>
+            </ng-template>
+        </div>
+
+        <div class="mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" formControlName="city">
+            <div *ngIf="!newUserFormGroup.controls['city'].valid; else validCity">
+                <p class="text-danger">Enter Valid city</p>
+            </div>
+            <ng-template  #validCity >
+                <p class="text-success" >Valid city</p>
+            </ng-template>
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" formControlName="phone">
+
+            <div *ngIf="!newUserFormGroup.controls['phone'].valid; else validPhone">
+                <p class="text-danger">Enter Valid phone</p>
+            </div>
+            <ng-template  #validPhone >
+                <p class="text-success" >Valid phone</p>
+            </ng-template>
+        </div>
+
+        <div class="mb-3">
+            <label for="website" class="form-label">Website</label>
+            <input type="text" class="form-control" id="website" formControlName="website">
+
+            <div *ngIf="!newUserFormGroup.controls['website'].valid; else validWebsite">
+                <p class="text-danger">Enter Valid website</p>
+            </div>
+            <ng-template  #validWebsite >
+                <p class="text-success" >Valid Website</p>
+            </ng-template>
+        </div>
+
+        <div class="mb-3">
+            <label for="comapny" class="form-label">Company Name</label>
+            <input type="text" class="form-control" id="comapny" formControlName="company">
+            <div *ngIf="!newUserFormGroup.controls['company'].valid; else validCompany">
+                <p class="text-danger">Enter Valid company</p>
+            </div>
+            <ng-template  #validCompany >
+                <p class="text-success" >Valid company</p>
+            </ng-template>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

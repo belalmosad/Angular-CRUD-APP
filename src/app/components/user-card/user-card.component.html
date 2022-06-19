@@ -1,0 +1,11 @@
+<div class="card text-white bg-dark mb-3 py-3 cursor-pointer" style="max-width: 18rem;">
+    <div class="card-header">{{userData.name}}</div>
+    <div class="card-body">
+      <h5 class="card-title" ><a routerLink="/user-details/{{userData.id}}">User ID: {{userData.id}}</a></h5>
+      <p class="card-text">{{userData.email}}</p>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <button class="btn btn-primary col-4 mx-1 btn-sm" routerLink="./update-user/{{userData.id}}">Update</button>
+      <button class="btn btn-danger col-4 mx-1 btn-sm" (click)="deleteUser(userData.id)">Delete</button>
+    </div>
+</div>

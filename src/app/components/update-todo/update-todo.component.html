@@ -1,0 +1,22 @@
+<div class="container">
+    <form class="my-5"  (ngSubmit)="updateTodo()" [formGroup]="formGroup">
+
+        <h1 class="text-center">Update Todo</h1>
+
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" id="title" formControlName="title">
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" formControlName="completed">
+            <label class="form-check-label" for="flexCheckDefault">
+              Completed
+            </label>
+        </div>
+
+
+        
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+</div>
